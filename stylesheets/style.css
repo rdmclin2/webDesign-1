@@ -110,7 +110,7 @@ body {
 body .hero {
   max-width: 100em;
   margin: 0 auto;
-  background: url("images/find-an-agent-hero.png");
+  background: url("../images/find-an-agent-hero.png");
   background-size: cover;
   color: white;
 }
@@ -433,7 +433,7 @@ body .people ul li img.grey {
 body .find-an-agent {
   max-width: 100em;
   margin: 0 auto;
-  background: url("images/find-an-agent-hero.png");
+  background: url("../images/find-an-agent-hero.png");
   background-size: cover;
   color: white;
 }
