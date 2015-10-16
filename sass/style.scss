@@ -1,6 +1,355 @@
 @import "compass/reset";
 @import "compass/css3";
-
+@import "compass/utilities/";
+@import "icomoon";
+$bg-color: #f4f3f1;
+$text-color: #4f4f4f;
+$secondy-text-color: #D9DADA;
+$highlight-text-color: white;
+$button-color: #6cdcac;
+$border-color: #a5a5a5;
+$test-button-color: #60677a;
+$second-name-color: #aebeb9;
 body {
-	font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+    text-align: center;
+    background-color: $bg-color;
+    .hero {
+        max-width: 100em;
+        margin: 0 auto;
+        background: url('/images/find-an-agent-hero.png');
+        background-size: cover;
+        color: $highlight-text-color;
+        header {
+            img {
+                width: 8em;
+                height: 2em;
+                float: left;
+            }
+            ul {
+                float: right;
+                padding: 1em;
+                li {
+                    // float: left;
+                    display: inline;
+                    margin: 1em .5em;
+                    padding: .5em 1em;
+                    border: 1px solid transparent;
+                    border-radius: 2px;
+                    &:last-child {
+                        border: 1px solid $highlight-text-color;
+                    }
+                }
+            }
+            @include clearfix;
+        }
+        h1 {
+            font-size: 4em;
+            padding: 1em 0 .5em 0;
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 2em;
+            color: $secondy-text-color;
+        }
+        form {
+            padding: 2em 0 4em 0;
+            input[type="text"] {
+                padding: 1em;
+                border: 0;
+                width: 18em;
+                border-radius: 2px 0 0 2px;
+                background: $bg-color;
+                opacity: .3;
+            }
+            input[type="button"] {
+                text-transform: uppercase;
+                color: $highlight-text-color;
+                padding: 1em;
+                border: 0;
+                width: 6em;
+                border-radius: 0 2px 2px 0;
+                background-color: $button-color;
+            }
+        }
+    }
+    .numbers {
+        width: 80%;
+        margin: 0 auto;
+        ul {
+            position: relative;
+            top: -1em;
+            background: $bg-color;
+            li {
+                float: left;
+                width: 25%;
+                box-sizing: border-box;
+                border-top: 1px solid $secondy-text-color;
+                border-bottom: 1px solid $secondy-text-color;
+                border-left: 1px solid $secondy-text-color;
+                &:last-child {
+                    border-right: 1px solid $secondy-text-color;
+                }
+                h2 {
+                    font-size: 2em;
+                    padding: 1em 0;
+                }
+                h3 {
+                    padding: 0 0 2em 0;
+                }
+            }
+            @include clearfix;
+        }
+    }
+    .how-it-works {
+        width: 80%;
+        margin: 2em auto;
+        h2 {
+            font-size: 2em;
+            text-transform: uppercase;
+            padding: 1em 0;
+            &:after {
+                display: block;
+                content: "";
+                background-color: $border-color;
+                width: 2em;
+                height: .1em;
+                margin: .4em auto;
+            }
+        }
+        ul {
+            li {
+                float: left;
+                width: 33.33%;
+                // &:before {
+                //     display: block;
+                //     content: "";
+                //     background: $border-color;
+                //     width: 100%;
+                //     height: 1px;
+                //     position: absolute;
+                //     top: 4em;
+                //     left: 50%;
+                //     margin: 0 2em;
+                // }
+                // &:last-child:before {
+                //     display: none;
+                // }
+                .number {
+                    font-size: 2em;
+                    color: $border-color;
+                    border: 1px solid $border-color;
+                    width: 1em;
+                    height: 1em;
+                    display: block;
+                    margin: 1em auto 2em auto;
+                    padding: .4em;
+                    @include border-radius(100%);
+                    background-color: $bg-color;
+                }
+                i {
+                    font-size: 3.6em;
+                }
+                h3 {
+                    font-size: 2em;
+                    font-weight: bold;
+                    margin: 1em auto 1em auto;
+                }
+                p {
+                    color: $border-color;
+                    margin: 1em auto 2em auto;
+                    padding: .4em;
+                }
+                .icon-pencil {
+                    color: #AC9CD2;
+                }
+                .icon-list2 {
+                    color: #ECA95A;
+                }
+                .icon-users {
+                    color: #4D99CB;
+                }
+            }
+            @include clearfix;
+        }
+    }
+    .why-choose-us {
+        width: 80%;
+        margin: 2em auto;
+        h2 {
+            font-size: 2em;
+            text-transform: uppercase;
+            padding: 1em 0;
+            margin-bottom: 2em;
+            &:after {
+                display: block;
+                content: "";
+                background-color: $border-color;
+                width: 2em;
+                height: .1em;
+                margin: .4em auto;
+            }
+        }
+        ul {
+            li {
+                float: left;
+                width: 50%;
+                position: relative;
+                margin: 1em auto 1em auto;
+                i {
+                    position: absolute;
+                    width: 5em;
+                    left: 0em;
+                    font-size: 3em;
+                }
+                .detail {
+                    margin-left: 10em;
+                    text-align: left;
+                    h3 {
+                        font-size: 3em;
+                        padding: 1em;
+                        padding-top: 0em;
+                        padding-left: 0em;
+                    }
+                    p {
+                        width: 80%;
+                        color: $border-color;
+                    }
+                }
+                .icon-pencil {
+                    color: #AC9CD2;
+                }
+                .icon-users {
+                    color: #4D99CB;
+                }
+            }
+            @include clearfix;
+        }
+    }
+    .people {
+        width: 80%;
+        margin: 2em auto;
+        form {
+            padding: 2em 0 4em 0;
+            input[type="button"]#test {
+                color: $highlight-text-color;
+                padding: 1em;
+                border: 0;
+                border-radius: 0 2px 2px 0;
+                background-color: $test-button-color;
+            }
+            input[type="button"]#recent {
+                color: $highlight-text-color;
+                padding: 1em;
+                border: 0;
+                border-radius: 0 2px 2px 0;
+                background-color: $button-color;
+            }
+        }
+        i {
+            font-size: 2em;
+            color: $border-color;
+        }
+        blockquote {
+            margin: 2em 0;
+        }
+        h3 {
+            font-size: 1em;
+            padding-bottom: .5em;
+        }
+        h4 {
+            font-size: 1em;
+            color: $second-name-color;
+            margin-bottom: 2em;
+        }
+        ul {
+            li {
+                display: inline-block;
+                img.light {
+                    color: $border-color;
+                    border: 1px solid $border-color;
+                    width: 5em;
+                    height: 5em;
+                    margin: 2em;
+                    padding: .2em;
+                    @include border-radius(100%);
+                }
+                img.grey {
+                    color: $border-color;
+                    border: 1px solid $border-color;
+                    width: 5em;
+                    height: 5em;
+                    margin: 2em;
+                    padding: .2em;
+                    @include border-radius(100%);
+                    opacity: .3;
+                    -webkit-filter: grayscale(100%);
+                    -moz-filter: grayscale(100%);
+                    -ms-filter: grayscale(100%);
+                    -o-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                    filter: gray;
+                }
+            }
+        }
+    }
+    .find-an-agent {
+        max-width: 100em;
+        margin: 0 auto;
+        background: url('/images/find-an-agent-hero.png');
+        background-size: cover;
+        color: $highlight-text-color;
+        label {
+            font-size: 2em;
+            margin-right: .5em;
+        }
+        form {
+            padding: 4em 0 4em 0;
+            input[type="text"] {
+                padding: 1em;
+                border: 0;
+                width: 25em;
+                border-radius: 2px 0 0 2px;
+                background: $bg-color;
+            }
+            input[type="button"] {
+                text-transform: uppercase;
+                color: $highlight-text-color;
+                padding: 1em;
+                border: 0;
+                width: 6em;
+                border-radius: 0 2px 2px 0;
+                background-color: $button-color;
+            }
+        }
+    }
+    .footer{
+    footer {
+        width: 80%;
+        margin: 2em auto;
+        font-size: 1.4em;
+        ul.about {
+            li {
+                float : left;
+                padding : 0 1em;
+                display: inline-block;
+                color: $border-color;
+            }
+        }
+        ul.social {
+            li {
+                float : right;
+                padding : 0 1em;
+                display: inline-block;
+            }
+            .icon-pencil {
+                    color: #AC9CD2;
+                }
+            .icon-users {
+                color: #4D99CB;
+            }
+        }
+    }
+}
 }

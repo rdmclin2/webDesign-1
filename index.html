@@ -1,22 +1,176 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>My Design</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8">
-	<!--[if IE]>
-	    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-    <link href="stylesheets/style.css" type="text/css" rel="stylesheet" >
+    <title>My Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="stylesheets/style.css" type="text/css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,300,600,400' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
-	
-	<h1>hello, world</h1>
-	<h1>你好，世界</h1>
+    <!-- 在Hero区域，我们可以看到一个logo，三个导航按钮，一个主标题，一个副标题，一个搜索表单。对应的，我们可以很直观的将其翻译为HTML文档： -->
+    <section class="hero">
+        <header>
+            <img src="images/logo.jpg" alt="logo">
+            <ul>
+                <li>Agents</li>
+                <li>Login</li>
+                <li>Signup</li>
+            </ul>
+        </header>
+        <h1>Relax, Finding An Agent Just Got Easier</h1>
+        <h2>Receive proposals from best agents for free</h2>
+        <form action="">
+            <input type="text" placeholder="Enter a suburb">
+            <input type="button" value="search">
+        </form>
+    </section>
+    <section class="numbers">
+        <ul>
+            <li class="number">
+                <h2>20,000</h2>
+                <h3>Agents</h3>
+            </li>
+            <li class="number">
+                <h2>1,723,000</h2>
+                <h3>Transactions</h3>
+            </li>
+            <li class="number">
+                <h2>17,444</h2>
+                <h3>Agencies</h3>
+            </li>
+            <li class="number">
+                <h2>10,200</h2>
+                <h3>Suburbs</h3>
+            </li>
+        </ul>
+    </section>
+    <section class="how-it-works">
+        <h2>How it works</h2>
+        <ul>
+            <li>
+                <div class="detail">
+                    <span class="number">1</span>
+                    <i class="icon-list2"></i>
+                    <h3>Compare</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </li>
+            <li>
+                <div class="detail">
+                    <span class="number">2</span>
+                    <i class="icon-pencil"></i>
+                    <h3>Receive Proposals</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </li>
+            <li>
+                <div class="detail">
+                    <span class="number">3</span>
+                    <i class="icon-users"></i>
+                    <h3>Sell with the Best</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <hr>
+    <section class="why-choose-us">
+        <h2>why choose us?</h2>
+        <ul>
+            <li>
+                <i class="icon-users"></i>
+                <div class="detail">
+                    <h3>Quick</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </li>
+            <li>
+                <i class="icon-pencil"></i>
+                <div class="detail">
+                    <h3>Free</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <i class="icon-users"></i>
+                <div class="detail">
+                    <h3>Easy</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </li>
+            <li>
+                <i class="icon-pencil"></i>
+                <div class="detail">
+                    <h3>Independent</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <i class="icon-users"></i>
+                <div class="detail">
+                    <h3>Comprehensive</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </li>
+            <li>
+                <i class="icon-pencil"></i>
+                <div class="detail">
+                    <h3>Awesome</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <hr>
+    <section class="people">
+        <form action="">
+            <input type="button" value="Testimonials" id="test">
+            <input type="button" value="Recent Feedbacks" id="recent">
+        </form>
+        <i class="icon-pencil"></i>
+        <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+        <h3>John Mayer</h3>
+        <h4>Halcyon,CEO</h4>
+        <ul>
+            <li ><img src="images/avatar1.jpg" alt="avatar1" class="grey"></li>
+            <li><img src="images/avatar2.jpg" alt="avatar2" class="light"></li>
+            <li><img src="images/avatar3.jpg" alt="avatar3" class="grey"></li>
+        </ul>
+    </section>
+    <section class="find-an-agent">
+        <form action="">
+            <label for="findanagent">Find An Agent</label>
+            <input type="text" placeholder="Enter a Suburb">
+            <input type="button" id="findanagent" value="SEARCH">
+        </form>
+    </section>
 
-	<section>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, mollitia. Praesentium earum sequi sit eius impedit, id consequatur voluptate labore numquam? Placeat vero inventore cupiditate natus, temporibus, voluptates qui necessitatibus?</p>
-	</section>
-
+    <section class="footer">
+        <footer>
+            <ul class="about">
+                <li>Blog</li>
+                <li>Contact Us</li>
+                <li>About Us</li>
+                <li>FAQs</li>
+                <li>Privacy</li>
+                <li>Disclaimer</li>
+            </ul>
+            <ul class="social">
+                <li><i class="icon-pencil"></i></li>
+                <li><i class="icon-users"></i></li>
+            </ul>
+        </footer>
+    </section>
 </body>
+
 </html>
